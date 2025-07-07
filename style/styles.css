@@ -53,3 +53,16 @@ form {
   /* 요소에 마우스 올렸을 때 스타일 */
   background-color: hotpink;
 }
+
+/* width, height */
+.box {
+  width: 50%;
+  height: 200px;
+  background-color: #00f3ff;
+}
+
+p {
+  color: #f9f871;
+  /* em단위: 부모로부터 결정됨 */
+  font-size: 1.5em;
+}
