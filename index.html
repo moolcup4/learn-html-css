@@ -4,17 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Html실습</title>
-  </head>
-  <body>
-    <div>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, natus
-      </p>
-      <a href="https://www.naver.com/" target="_blank">네이버 바로가기</a>
-    </div>
+    <!-- 외부 스타일 시트: 뱔도의 css파일을 만들고 이를 html에 연결하는 방식 -->
+    <link rel="stylesheet" href="styles.css" />
 
-    <div>
-      <a href="https://www.google.com" target="_blank">구글 바로가기</a>
+    <!-- 내부 스타일 시트: head 섹션 안에 각 요소들의 style 정의 -->
+    <style>
+      a {
+        /* 스타일 속성 */
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- inline 스타일: html 코드 내에서 해당 태그에 직접 style 속성을 주는 주는 것 -->
+    <div style="background-color: blue; color: white" id="box1">
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, natus
+        </p>
+        <a href="https://www.naver.com/" target="_blank">네이버 바로가기</a>
+      </div>
+
+      <div>
+        <a href="https://www.google.com" target="_blank">구글 바로가기</a>
+      </div>
     </div>
 
     <!-- START: 텍스트 태그 -->
@@ -25,8 +39,10 @@
       <p>
         Lorem ipsum, <strong>dolor</strong> sit amet consectetur adipisicing
         elit. <br />Iure totam assumenda a
-        <span style="color: red">error</span> nihil esse quaerat!
+        <span style="color: red" class="error">error</span> nihil esse quaerat!
       </p>
+      <span class="error">에러 메시지 입니다.</span>
+      <hr />
       <span>안녕?</span><br />
       <span>지금은 오후 1시 34분입니다.</span>
       <h6>h6</h6>
@@ -81,12 +97,12 @@
       </div>
       <div>
         <p>라디오 버튼</p>
-        <div>
+        <div style="border: 1px solid red; display: inline-block">
           <input type="radio" name="gender" value="male" id="male" />
           <label for="male">남성</label>
         </div>
 
-        <div>
+        <div style="border: 1px solid red; display: inline-block">
           <input type="radio" name="gender" value="female" id="female" />
           <label for="female">여성</label>
         </div>
