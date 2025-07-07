@@ -6,17 +6,126 @@
     <title>Html실습</title>
   </head>
   <body>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, natus
-      placeat incidunt nihil neque officia, optio ipsum maiores earum facilis
-      soluta dignissimos tempore debitis commodi, eligendi eum mollitia ad
-      distinctio!
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta rerum sit
-      quae fuga blanditiis magnam nesciunt repellat exercitationem earum, est
-      animi possimus. Possimus sapiente veritatis quam, itaque neque hic quo?
-    </p>
-    <a href="https://www.naver.com/" target="_blank"> 네이버 바로가기 </a>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, natus
+      </p>
+      <a href="https://www.naver.com/" target="_blank">네이버 바로가기</a>
+    </div>
+
+    <div>
+      <a href="https://www.google.com" target="_blank">구글 바로가기</a>
+    </div>
+
+    <!-- START: 텍스트 태그 -->
+    <div style="border: 1px solid red; padding: 10px">
+      <h1>네이버</h1>
+      <h3>h3</h3>
+      <h5>h5 제목입니다</h5>
+      <p>
+        Lorem ipsum, <strong>dolor</strong> sit amet consectetur adipisicing
+        elit. <br />Iure totam assumenda a
+        <span style="color: red">error</span> nihil esse quaerat!
+      </p>
+      <span>안녕?</span><br />
+      <span>지금은 오후 1시 34분입니다.</span>
+      <h6>h6</h6>
+    </div>
+    <!-- END: 텍스트 태그 -->
+    <!-- start: 이미지 태그 -->
+    <div>
+      <img
+        src="https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F117%2F2025%2F07%2F02%2F0003960248_002_20250702200011253.jpg&type=sc960_832"
+        alt="에스파 윈터 이미지"
+      />
+    </div>
+    <!-- END: 이미지 태그 -->
+    <!-- 리스트 태그 -->
+    <ul>
+      <li>첫번째 아이템</li>
+      <li>두번째 아이템</li>
+      <li>세번째 아이템</li>
+    </ul>
+
+    <ol>
+      <li>첫번째 아이템</li>
+      <li>두번째 아이템</li>
+      <li>세번째 아이템</li>
+    </ol>
+    <ul>
+      <li>list1</li>
+      <li>list2</li>
+      <li>list3</li>
+    </ul>
+    <ol>
+      <li>list1</li>
+      <li>list2</li>
+      <li>list3</li>
+    </ol>
+    <dl>
+      <dt>HTML</dt>
+      <dd>웹 페이지의 구조를 정의하는 언어</dd>
+      <dt>CSS</dt>
+      <dd>웹 페이지의 스타일을 정의하는 언어</dd>
+    </dl>
+    <!--  form 요소 -->
+    <form>
+      <h3>로그인</h3>
+      <div>
+        <span>ID</span>
+        <input type="text" />
+      </div>
+      <div>
+        <span>PassWord</span>
+        <input type="password" />
+      </div>
+      <div>
+        <p>라디오 버튼</p>
+        <div>
+          <input type="radio" name="gender" value="male" id="male" />
+          <label for="male">남성</label>
+        </div>
+
+        <div>
+          <input type="radio" name="gender" value="female" id="female" />
+          <label for="female">여성</label>
+        </div>
+
+        <p>체크박스 버튼</p>
+        <div style="border: 1px solid red; display: inline-block">
+          <input type="checkbox" name="hobby" value="reading" id="reading" />
+          <label for="reading">독서</label>
+        </div>
+
+        <div style="border: 1px solid red; display: inline-block">
+          <input type="checkbox" name="hobby" value="sports" id="sports" />
+          <label for="sports">운동</label>
+        </div>
+      </div>
+      <!-- 텍스트블록 -->
+      <p>텍스트 블록</p>
+      <textarea name="message" id="" rows="4" cols="50"></textarea>
+      <!--  Select 요소 -->
+
+      <div>
+        <label for="size">크기 선택:</label>
+        <select name="size" id="size">
+          <option value="">선택해주세요</option>
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+        </select>
+      </div>
+      <!-- 미션1: 좋아하는 음식 선택하는 입력요소 만들기 -->
+      <!-- 미션2: 라디오 버튼도 label 태그를 이용해서 텍스트 연결하기 -->
+      <div>
+        <label for="food">음식 선택:</label>
+        <select name="food" id="food">
+          <option value="">선택해주세요</option>
+          <option value="sandwich">Sandwich</option>
+          <option value="hamburger">Hamburger</option>
+        </select>
+      </div>
+    </form>
   </body>
 </html>
