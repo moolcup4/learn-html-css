@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Html실습</title>
     <!-- 외부 스타일 시트: 뱔도의 css파일을 만들고 이를 html에 연결하는 방식 -->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./style/styles.css" />
 
     <!-- 내부 스타일 시트: head 섹션 안에 각 요소들의 style 정의 -->
     <style>
@@ -17,6 +17,19 @@
   </head>
 
   <body>
+    <div class="parent">
+      부모입니다
+      <!-- parent의 자식 요소 -->
+      <div class="children">
+        자식입니다
+        <p class="children_children">자손입니다</p>
+      </div>
+      <div class="children"></div>
+    </div>
+
+    <div class="parent2">부모입니다</div>
+    <div class="parent3">부모입니다</div>
+
     <!-- inline 스타일: html 코드 내에서 해당 태그에 직접 style 속성을 주는 주는 것 -->
     <div style="background-color: blue; color: white" id="box1">
       <div>
@@ -142,6 +155,10 @@
           <option value="hamburger">Hamburger</option>
         </select>
       </div>
+
+      <!-- 제출 버튼 -->
+      <!-- <input type="submit" value="서류 제출" /> -->
+      <button type="submit" class="submit-button">서류 제출</button>
     </form>
   </body>
 </html>
